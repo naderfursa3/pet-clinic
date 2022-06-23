@@ -8,8 +8,7 @@ pipeline {
                 sh "mvn clean package"
             }
         }
-        //
-    
+        // 
         stage("Save Artifact") {
             steps {
                 archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
