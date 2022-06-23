@@ -1,7 +1,6 @@
 pipeline {
     agent any
-
-    
+    // Stage begin here ...
     stages {
         //
         stage("Build") {
